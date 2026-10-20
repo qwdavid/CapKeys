@@ -1,4 +1,4 @@
-(footprint "KEY_WHITE_1"
+(footprint "KEY_WHITE"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
@@ -7,7 +7,7 @@
 		(at 0 -12.25 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "53ca29b3-cd5e-4b81-b294-32cea4da9cfc")
+		(uuid "cfb4c521-0679-4716-b82f-9a04fb2e3521")
 		(effects
 			(font
 				(size 1 1)
@@ -15,11 +15,11 @@
 			)
 		)
 	)
-	(property "Value" "KEY_WHITE_1"
+	(property "Value" "KEY_WHITE"
 		(at 0 -10.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1b5a1322-43df-4162-a979-3525ed0949cc")
+		(uuid "010df134-9853-4b3f-923c-10c2933375a3")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "553cf2cd-1e66-470f-a58a-2173d1b0b2e8")
+		(uuid "49f075ec-0d54-442a-8c51-700116a0da85")
 		(effects
 			(font
 				(size 1 1)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4143951d-9de1-40f0-9220-5484057bebcf")
+		(uuid "74bf176d-b477-4f6c-b91e-bbdda685bcc2")
 		(effects
 			(font
 				(size 1 1)
@@ -55,40 +55,24 @@
 	)
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
-	(fp_rect
-		(start -10 -5)
-		(end 10 2.5)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill yes)
-		(layers "F.Cu" "F.Mask")
-		(uuid "e2a59138-d346-4fdb-8f39-950922179c8a")
-	)
-	(fp_rect
-		(start -10 0)
-		(end 10 10)
-		(radius 2)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill yes)
-		(layers "F.Cu" "F.Mask")
-		(uuid "38e9ee99-3c7b-4cdf-a584-55864a127786")
-	)
 	(fp_text user "${REFERENCE}"
 		(at 0 -9.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "296d9c74-cf02-4d33-b070-97184822b896")
+		(uuid "07668f6a-cac8-49ba-b6d3-9d14c6c75fbd")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
 		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 20 20)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.15)
+		(uuid "4233bb6a-f2e5-4ad2-81c9-6fc43ebd65ad")
 	)
 	(embedded_fonts no)
 )

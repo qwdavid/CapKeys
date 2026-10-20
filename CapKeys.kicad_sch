@@ -9,7 +9,7 @@
 		(company "QW ELECTRONICS")
 	)
 	(lib_symbols
-		(symbol "Connector:USB_C_Receptacle_USB2.0_14P"
+		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
 			)
@@ -28,7 +28,7 @@
 					)
 				)
 			)
-			(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(property "Value" "USB_C_Receptacle_USB2.0_16P"
 				(at 0 19.685 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -60,7 +60,7 @@
 					)
 				)
 			)
-			(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -93,7 +93,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_0"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_0"
 				(rectangle
 					(start -0.254 -17.78)
 					(end 0.254 -16.764)
@@ -182,8 +182,30 @@
 						(type none)
 					)
 				)
+				(rectangle
+					(start 10.16 -12.446)
+					(end 9.144 -12.954)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 10.16 -14.986)
+					(end 9.144 -15.494)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_0_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_0_1"
 				(rectangle
 					(start -10.16 17.78)
 					(end 10.16 -17.78)
@@ -384,7 +406,7 @@
 					)
 				)
 			)
-			(symbol "USB_C_Receptacle_USB2.0_14P_1_1"
+			(symbol "USB_C_Receptacle_USB2.0_16P_1_1"
 				(pin passive line
 					(at 0 -22.86 90)
 					(length 5.08)
@@ -468,6 +490,24 @@
 						)
 					)
 					(number "A7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -12.7 180)
+					(length 5.08)
+					(name "SBU1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -598,6 +638,24 @@
 						)
 					)
 					(number "B7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -15.24 180)
+					(length 5.08)
+					(name "SBU2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5123,8 +5181,16 @@
 		(uuid "3b1069e6-da0c-4796-8fbc-cd57ad1cee82")
 	)
 	(no_connect
+		(at 53.34 59.69)
+		(uuid "44892cf6-5461-4581-a8da-6717777ea8f9")
+	)
+	(no_connect
 		(at 330.2 130.81)
 		(uuid "d026c68f-f460-4e00-b48b-ad8311e60a6a")
+	)
+	(no_connect
+		(at 53.34 62.23)
+		(uuid "d3249b92-4a04-4817-b33a-f340b575ec97")
 	)
 	(no_connect
 		(at 237.49 276.86)
@@ -7374,16 +7440,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 168.91) (xy 181.61 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6b170c7-2cf3-41c7-ab7f-493140c40f84")
-	)
-	(wire
-		(pts
 			(xy 205.74 54.61) (xy 195.58 54.61)
 		)
 		(stroke
@@ -9352,16 +9408,6 @@
 		)
 		(uuid "8d9cfb87-3751-4b49-9f89-e1398c5dae9b")
 	)
-	(label "KEY_MUTE"
-		(at 171.45 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8df86417-9fa7-4b20-b0a6-81b6f3ab3f3c")
-	)
 	(label "LED_OCT1"
 		(at 391.16 77.47 180)
 		(effects
@@ -10102,7 +10148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0205332c-597c-4ba7-b1bc-c2877b53fc82")
-		(property "Reference" "J39"
+		(property "Reference" "J38"
 			(at 299.72 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10124,7 +10170,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 297.18 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -10163,7 +10209,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J39")
+					(reference "J38")
 					(unit 1)
 				)
 			)
@@ -10259,7 +10305,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0527a2d9-4bb6-4ab2-b313-6d4485c5f0f9")
-		(property "Reference" "J25"
+		(property "Reference" "J24"
 			(at 236.22 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10281,7 +10327,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 233.68 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -10320,7 +10366,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J25")
+					(reference "J24")
 					(unit 1)
 				)
 			)
@@ -10360,7 +10406,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 269.748 255.27 90)
 			(hide yes)
 			(show_name no)
@@ -10440,7 +10486,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 76.708 90)
 			(hide yes)
 			(show_name no)
@@ -10578,7 +10624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c853ce5-c60a-4b49-8337-f68ea981a29c")
-		(property "Reference" "J46"
+		(property "Reference" "J45"
 			(at 363.22 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10600,7 +10646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 360.68 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -10639,7 +10685,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J46")
+					(reference "J45")
 					(unit 1)
 				)
 			)
@@ -10833,7 +10879,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 25.908 90)
 			(hide yes)
 			(show_name no)
@@ -11182,7 +11228,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 36.068 90)
 			(hide yes)
 			(show_name no)
@@ -11425,7 +11471,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 77.1652 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -11485,7 +11531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1388d319-a86b-4922-bda2-f1cf08c462e3")
-		(property "Reference" "J26"
+		(property "Reference" "J25"
 			(at 236.22 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11507,7 +11553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 233.68 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -11546,7 +11592,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J26")
+					(reference "J25")
 					(unit 1)
 				)
 			)
@@ -11664,7 +11710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 152.4 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -11721,7 +11767,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16eeae8d-9109-4264-8a56-fdf3afcf62b2")
-		(property "Reference" "J42"
+		(property "Reference" "J41"
 			(at 314.96 195.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11743,7 +11789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 312.42 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -11782,7 +11828,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J42")
+					(reference "J41")
 					(unit 1)
 				)
 			)
@@ -11800,7 +11846,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "182a721b-b68a-4a77-aad3-9c28a69a88f0")
-		(property "Reference" "J31"
+		(property "Reference" "J30"
 			(at 267.97 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11822,7 +11868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 265.43 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -11861,7 +11907,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J31")
+					(reference "J30")
 					(unit 1)
 				)
 			)
@@ -11879,7 +11925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a0dcbeb-6dc8-4232-8ddb-2e4b22042b3f")
-		(property "Reference" "J36"
+		(property "Reference" "J35"
 			(at 281.94 195.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11901,7 +11947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 279.4 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -11940,7 +11986,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J36")
+					(reference "J35")
 					(unit 1)
 				)
 			)
@@ -11958,7 +12004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a742fa6-22fa-415a-b4ec-3aea73091d90")
-		(property "Reference" "J35"
+		(property "Reference" "J34"
 			(at 281.94 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11980,7 +12026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 279.4 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -12019,7 +12065,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J35")
+					(reference "J34")
 					(unit 1)
 				)
 			)
@@ -12057,7 +12103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 109.5248 0)
 			(hide yes)
 			(show_name no)
@@ -12137,7 +12183,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -12230,7 +12276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 369.2652 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -12410,7 +12456,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -12503,7 +12549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 323.5452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -12585,7 +12631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 170.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -12662,7 +12708,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 119.0752 0)
 			(hide yes)
 			(show_name no)
@@ -12900,7 +12946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 149.86 172.72 0)
 			(hide yes)
 			(show_name no)
@@ -13057,7 +13103,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 170.18 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -13134,7 +13180,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 313.69 72.898 90)
 			(hide yes)
 			(show_name no)
@@ -13194,7 +13240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "296bdd54-c10c-4254-890e-eb78982002e1")
-		(property "Reference" "J43"
+		(property "Reference" "J42"
 			(at 331.47 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13216,7 +13262,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 328.93 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -13255,7 +13301,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J43")
+					(reference "J42")
 					(unit 1)
 				)
 			)
@@ -13293,7 +13339,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 107.188 90)
 			(hide yes)
 			(show_name no)
@@ -13431,7 +13477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b2287db-6f46-4626-bb7c-ad4d5711248f")
-		(property "Reference" "J30"
+		(property "Reference" "J29"
 			(at 248.92 195.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13453,7 +13499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 246.38 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -13492,7 +13538,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J30")
+					(reference "J29")
 					(unit 1)
 				)
 			)
@@ -13530,7 +13576,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 139.7 119.888 90)
 			(hide yes)
 			(show_name no)
@@ -13768,7 +13814,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -13851,7 +13897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 69.342 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -14009,7 +14055,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 36.068 90)
 			(hide yes)
 			(show_name no)
@@ -14089,7 +14135,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -14258,7 +14304,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 313.69 84.328 90)
 			(hide yes)
 			(show_name no)
@@ -14340,7 +14386,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 74.168 255.27 90)
 			(hide yes)
 			(show_name no)
@@ -14400,7 +14446,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a0418bc-1f4c-4cf1-ae06-2772942583f6")
-		(property "Reference" "J45"
+		(property "Reference" "J44"
 			(at 331.47 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14422,7 +14468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 328.93 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -14461,7 +14507,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J45")
+					(reference "J44")
 					(unit 1)
 				)
 			)
@@ -14499,7 +14545,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14670,7 +14716,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 75.438 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -14752,7 +14798,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 204.978 255.27 90)
 			(hide yes)
 			(show_name no)
@@ -14834,7 +14880,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 152.4 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -14891,7 +14937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4be7a10e-20ed-4456-8353-202f5f8a21e9")
-		(property "Reference" "J48"
+		(property "Reference" "J47"
 			(at 363.22 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14913,7 +14959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 360.68 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -14952,7 +14998,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J48")
+					(reference "J47")
 					(unit 1)
 				)
 			)
@@ -14992,7 +15038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 369.2652 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -15072,7 +15118,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 46.228 90)
 			(hide yes)
 			(show_name no)
@@ -15152,7 +15198,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -15310,7 +15356,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15401,7 +15447,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15494,7 +15540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 149.86 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -15551,7 +15597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e419466-b889-44af-b3bf-4d66332e2447")
-		(property "Reference" "J23"
+		(property "Reference" "J22"
 			(at 204.47 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15573,7 +15619,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 201.93 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -15612,7 +15658,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J23")
+					(reference "J22")
 					(unit 1)
 				)
 			)
@@ -15730,7 +15776,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 138.43 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -15809,7 +15855,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 336.2452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -16123,7 +16169,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 66.548 90)
 			(hide yes)
 			(show_name no)
@@ -16593,7 +16639,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 219.4052 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -16675,7 +16721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 140.208 255.27 90)
 			(hide yes)
 			(show_name no)
@@ -16757,7 +16803,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 138.43 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -16836,7 +16882,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 310.8452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -16918,7 +16964,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 272.7452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -16998,7 +17044,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 86.868 90)
 			(hide yes)
 			(show_name no)
@@ -17078,7 +17124,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 97.028 90)
 			(hide yes)
 			(show_name no)
@@ -17238,7 +17284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 170.18 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -17393,7 +17439,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -17484,7 +17530,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -17575,7 +17621,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 97.028 90)
 			(hide yes)
 			(show_name no)
@@ -17658,7 +17704,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 61.722 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -17816,7 +17862,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -17909,7 +17955,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 67.818 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -18069,7 +18115,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 380.6952 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -18227,7 +18273,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -18376,7 +18422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d5a8dbe-eb18-4f7a-84d5-9282c126f3b8")
-		(property "Reference" "J32"
+		(property "Reference" "J31"
 			(at 267.97 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18398,7 +18444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 265.43 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -18437,7 +18483,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J32")
+					(reference "J31")
 					(unit 1)
 				)
 			)
@@ -18455,7 +18501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8df7d7a2-3d7a-4ace-be0e-d51a0d976b14")
-		(property "Reference" "J27"
+		(property "Reference" "J26"
 			(at 236.22 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18477,7 +18523,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 233.68 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -18516,7 +18562,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J27")
+					(reference "J26")
 					(unit 1)
 				)
 			)
@@ -18556,7 +18602,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 284.1752 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -18636,7 +18682,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -18729,7 +18775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 348.9452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -18856,7 +18902,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_16P")
 		(at 38.1 46.99 0)
 		(unit 1)
 		(body_style 1)
@@ -18877,7 +18923,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+		(property "Value" "USB_C_Receptacle_USB2.0_16P"
 			(at 38.1 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18887,7 +18933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A"
 			(at 41.91 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -18909,7 +18955,7 @@
 				)
 			)
 		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
 			(at 38.1 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -18964,6 +19010,12 @@
 		)
 		(pin "B9"
 			(uuid "d520898b-59ac-440f-bf96-8c549ad97d15")
+		)
+		(pin "A8"
+			(uuid "8ec79bca-2d1e-4fdf-a30c-33bed98aeace")
+		)
+		(pin "B8"
+			(uuid "3cc5b4c2-d06f-4af0-b269-6665042ad97c")
 		)
 		(instances
 			(project "CapKeys"
@@ -19086,7 +19138,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 111.4552 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -19247,7 +19299,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 76.962 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -19329,7 +19381,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 136.8552 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -19411,7 +19463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 143.2052 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -19491,7 +19543,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -19584,7 +19636,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 149.86 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -19739,7 +19791,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 46.228 90)
 			(hide yes)
 			(show_name no)
@@ -19799,7 +19851,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c3266f7-52c0-4f87-9a3a-259f352fbbb6")
-		(property "Reference" "J37"
+		(property "Reference" "J36"
 			(at 299.72 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19821,7 +19873,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 297.18 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -19860,7 +19912,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J37")
+					(reference "J36")
 					(unit 1)
 				)
 			)
@@ -20132,7 +20184,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 127.508 90)
 			(hide yes)
 			(show_name no)
@@ -20192,7 +20244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af3d6358-d510-4b22-9b0f-16cb28a4a4f4")
-		(property "Reference" "J28"
+		(property "Reference" "J27"
 			(at 248.92 187.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20214,7 +20266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 246.38 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -20253,7 +20305,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J28")
+					(reference "J27")
 					(unit 1)
 				)
 			)
@@ -20291,7 +20343,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -20384,7 +20436,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 182.88 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -20441,7 +20493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1dbfd58-bfd5-4592-8a82-f6136608aa0d")
-		(property "Reference" "J40"
+		(property "Reference" "J39"
 			(at 314.96 187.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20463,7 +20515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 312.42 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -20502,7 +20554,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J40")
+					(reference "J39")
 					(unit 1)
 				)
 			)
@@ -20520,7 +20572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b1f42b4f-8135-4961-9720-8e8413a112a3")
-		(property "Reference" "J29"
+		(property "Reference" "J28"
 			(at 248.92 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20542,7 +20594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 246.38 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -20581,7 +20633,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J29")
+					(reference "J28")
 					(unit 1)
 				)
 			)
@@ -20619,7 +20671,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 117.348 90)
 			(hide yes)
 			(show_name no)
@@ -21011,7 +21063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 285.4452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -21149,7 +21201,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bafc604c-6460-4e11-a8a4-bccf3ba18825")
-		(property "Reference" "J41"
+		(property "Reference" "J40"
 			(at 314.96 191.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21171,7 +21223,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 312.42 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -21210,7 +21262,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J41")
+					(reference "J40")
 					(unit 1)
 				)
 			)
@@ -21250,7 +21302,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 88.5952 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -21542,7 +21594,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be1d7056-7da2-4539-8428-b1941c140036")
-		(property "Reference" "J44"
+		(property "Reference" "J43"
 			(at 331.47 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21564,7 +21616,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 328.93 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -21603,7 +21655,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J44")
+					(reference "J43")
 					(unit 1)
 				)
 			)
@@ -21621,7 +21673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be5f04fb-250a-444d-9d77-f70154de67e8")
-		(property "Reference" "J33"
+		(property "Reference" "J32"
 			(at 267.97 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21643,7 +21695,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 265.43 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -21682,7 +21734,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J33")
+					(reference "J32")
 					(unit 1)
 				)
 			)
@@ -21958,7 +22010,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 272.7452 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -22038,7 +22090,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 147.828 90)
 			(hide yes)
 			(show_name no)
@@ -22098,7 +22150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c2351d14-234f-45e5-8c38-efab587578bb")
-		(property "Reference" "J34"
+		(property "Reference" "J33"
 			(at 281.94 187.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22120,7 +22172,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 279.4 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -22159,7 +22211,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J34")
+					(reference "J33")
 					(unit 1)
 				)
 			)
@@ -22278,7 +22330,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 54.102 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -22360,7 +22412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 352.0948 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -22518,7 +22570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -22689,7 +22741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 67.0052 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -22849,7 +22901,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 298.1452 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -22931,7 +22983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 154.6352 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -22991,7 +23043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8a2a020-acc6-4d3b-aabc-746038d09102")
-		(property "Reference" "J22"
+		(property "Reference" "J21"
 			(at 204.47 200.6599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23013,7 +23065,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 201.93 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -23052,7 +23104,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J22")
+					(reference "J21")
 					(unit 1)
 				)
 			)
@@ -23170,7 +23222,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 149.86 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -23325,7 +23377,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 24.13 0)
 			(hide yes)
 			(show_name no)
@@ -23418,7 +23470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 116.84 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -23496,85 +23548,6 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x01")
-		(at 186.69 168.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d10376c3-4fe7-4a88-9301-bd528a73cd35")
-		(property "Reference" "J21"
-			(at 189.23 167.6399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x01"
-			(at 189.23 170.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.69 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 186.69 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e2bde6d0-c1fe-4480-b147-4e797a1ecab3")
-		)
-		(instances
-			(project "CapKeys"
-				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x01")
 		(at 297.18 205.74 0)
 		(unit 1)
 		(body_style 1)
@@ -23585,7 +23558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2d6540f-3b4a-4335-83c1-4b0c70dd2047")
-		(property "Reference" "J38"
+		(property "Reference" "J37"
 			(at 299.72 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23607,7 +23580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 297.18 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -23646,7 +23619,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J38")
+					(reference "J37")
 					(unit 1)
 				)
 			)
@@ -23684,7 +23657,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 25.908 90)
 			(hide yes)
 			(show_name no)
@@ -23766,7 +23739,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 182.88 196.85 0)
 			(hide yes)
 			(show_name no)
@@ -23921,7 +23894,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 137.668 90)
 			(hide yes)
 			(show_name no)
@@ -24001,7 +23974,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 86.868 90)
 			(hide yes)
 			(show_name no)
@@ -24083,7 +24056,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 182.88 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -24160,7 +24133,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 33.02 197.358 90)
 			(hide yes)
 			(show_name no)
@@ -24320,7 +24293,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 186.69 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -24377,7 +24350,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd46b6bf-daaa-4c52-a2be-ec36653387be")
-		(property "Reference" "J24"
+		(property "Reference" "J23"
 			(at 204.47 208.2799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24399,7 +24372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 201.93 209.55 0)
 			(hide yes)
 			(show_name no)
@@ -24438,7 +24411,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J24")
+					(reference "J23")
 					(unit 1)
 				)
 			)
@@ -24456,7 +24429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de80b48e-79d7-4712-9794-d4cb493234a5")
-		(property "Reference" "J47"
+		(property "Reference" "J46"
 			(at 363.22 204.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24478,7 +24451,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 360.68 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -24517,7 +24490,7 @@
 		(instances
 			(project "CapKeys"
 				(path "/8b17600d-8572-4e1f-b165-30c813586c73"
-					(reference "J47")
+					(reference "J46")
 					(unit 1)
 				)
 			)
@@ -24555,7 +24528,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -24880,7 +24853,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -24973,7 +24946,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 186.69 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -25052,7 +25025,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 207.9752 245.11 0)
 			(hide yes)
 			(show_name no)
@@ -25364,7 +25337,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 242.57 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -25522,7 +25495,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 191.77 76.708 90)
 			(hide yes)
 			(show_name no)
@@ -25602,7 +25575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -25693,7 +25666,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -25786,7 +25759,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_BLACK"
 			(at 152.4 193.04 0)
 			(hide yes)
 			(show_name no)
@@ -25941,7 +25914,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 184.15 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -26112,7 +26085,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_OTHER"
 			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -26191,7 +26164,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Footprints:KEY_WHITE"
 			(at 138.43 205.74 0)
 			(hide yes)
 			(show_name no)
@@ -26268,7 +26241,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 234.95 85.09 0)
 			(hide yes)
 			(show_name no)
