@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "Symbols") (type "KiCad") (uri "${KIPRJMOD}/Lib/Symbols") (options "") (descr ""))
 	(lib (name "lcsc_imported") (type "KiCad") (uri "${KIPRJMOD}/libs/lcsc/symbols/lcsc_imported.kicad_sym") (options "") (descr "LCSC Manager imported components"))
+	(lib (name "keys") (type "KiCad") (uri "C:/Users/qwdav/OneDrive/デスクトップ/Effector/DigiComp/esp32-guitar-effects-platform/hardware/kicad/project/project1/symbols/keys.kicad_sym") (options "") (descr ""))
 )
