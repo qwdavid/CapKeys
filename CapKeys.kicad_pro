@@ -146,7 +146,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -162,7 +162,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -210,7 +210,9 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -508,7 +510,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.15,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -661,7 +663,7 @@
         "uuid": "8b17600d-8572-4e1f-b165-30c813586c73"
       }
     ],
-    "used_designators": "U1-10,J1-48,R1-38,JP1-2,BZ1-2,#PWR1-54,Y1-3,D1-24,C1-24,H1-7",
+    "used_designators": "U1-10,BZ1-2,R1-38,J1-48,JP1-2,D1-24,#PWR1-54,Y1-3,C1-24,H1-7",
     "variants": []
   },
   "sheets": [
