@@ -15867,7 +15867,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:QFN40P300X300X60-20N"
+		(property "Footprint" "Package_DFN_QFN:UQFN-20_3x3mm_P0.4mm"
 			(at 57.15 254 0)
 			(hide yes)
 			(show_name no)
@@ -19345,7 +19345,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:QFN40P300X300X60-20N"
+		(property "Footprint" "Package_DFN_QFN:UQFN-20_3x3mm_P0.4mm"
 			(at 123.19 254 0)
 			(hide yes)
 			(show_name no)
@@ -19897,7 +19897,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:QFN40P300X300X60-20N"
+		(property "Footprint" "Package_DFN_QFN:UQFN-20_3x3mm_P0.4mm"
 			(at 187.96 254 0)
 			(hide yes)
 			(show_name no)
@@ -23265,7 +23265,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Footprints:QFN40P300X300X60-20N"
+		(property "Footprint" "Package_DFN_QFN:UQFN-20_3x3mm_P0.4mm"
 			(at 252.73 254 0)
 			(hide yes)
 			(show_name no)
